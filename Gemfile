@@ -1,4 +1,4 @@
 source "https://rubygems.org"
-gemspec
 
-gem "prologue-like-jekyll-theme"
+gem "jekyll", "~> 3.5"
+gem "jekyll-theme-prologue"
