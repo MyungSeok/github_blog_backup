@@ -114,6 +114,8 @@
 					$('#headerToggle, #header, #main')
 						.css('transition', 'none');
 
+
+				location.href = '/books/';
 	});
 
 })(jQuery);
