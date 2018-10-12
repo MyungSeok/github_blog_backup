@@ -1,145 +1,221 @@
+# Sudal's Note
+
 # CLI
 ```bash
-# Compile
-bundle
-# Service Start
-jekyll serve
+# Build
+$ gitbook install
+
+# Local Server
+$ gitbook serve
+
+# Remote Static Publish
+./publish_gitbook.sh
 ```
 
-# Prologue - Jekyll Theme
+# Tip
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
+### 맥 백쿼트(`) 만들기
 
-![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
-
-This is Prologue, a simple, single page responsive site template from [HTML5 UP](https://html5up.net/prologue), now available as a blog-aware Jekyll theme from [Chris Bobbe](https://chrisbobbe.github.io). It features a clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
-
-**Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
-
-# Added Features
-
-* **Blogging and multi-page features you expect from Jekyll**
-* Compatible with GitHub Pages
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Build your homepage with **custom scrolly sections** in the _sections folder
- * Set a **cover photo** for any section (not just the first), with alt text for screen readers and SEO
-* Add your **social profiles** easily in `_config.yml`.
-* Automatic search engine optimization (SEO) **meta tags** based on info you provide in `_config.yml` and frontmatter
-* **Google Analytics** built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in `_config.yml` as `google_analytics`
-* Custom **404 page** (called 404.html; to activate, move it to your project directory).
-
-# Installation
-
-There are two ways to get started (choose one):
-
-1. **Install the [jekyll-theme-prologue gem](https://rubygems.org/gems/jekyll-theme-prologue).** Instructions are in the [Jekyll docs](https://jekyllrb.com/docs/themes/#installing-a-theme). After running `bundle install`, you can find the theme files by running `open $(bundle show jekyll-theme-prologue)`.  A sample working `_config.yml` file ships with the gem; if you want to activate it, move it to your project's root directory. It will do nothing until you move it there, replacing the default `_config.yml` file.
-2. **Fork or clone the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue).** If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` in the provided `_config.yml` ([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
-
-Next, make sure that `url` and `base_url` are set for your own website in `_config.yml`. For local testing, make them both blank. Add a photo avatar to your project, then set `avatar: path/to/your/avatar.jpg` in _config.yml; for example, `avatar: assets/images/avatar.jpg` (48x48 pixels works best). Poke around the sample `_config.yml` file to see how you can add your social profiles.
-
-# Build your homepage
-
-1. **Your `_config.yml` file must include the following line or your homepage won't work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
-
-2. **Create a `_sections` folder** in your project's root directory and start adding content to your homepage. Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: your alt text here` to the section's frontmatter. Sample content is provided in the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue/tree/master/_sections).
-
-All new sections should be added as html or Markdown documents in the `_sections` folder. The following section variables can be set with [frontmatter](https://jekyllrb.com/docs/frontmatter/):
-- `title` (required)
-- `order` (required; orders the sequence of sections on the page. Example: `1`)
-- `cover-photo` (optional; sets a background image for the section. Example: `assets/images/banner.jpg`)
-- `cover-photo-alt` (required if using a cover photo. Describes the photo for screen readers and SEO; e.g. "Dome of Light art installation, Kaohsiung, Taiwan")
-- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
-- `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
-- `hide` (optional; if `true`, the section won't appear)
-
-# Start blogging!
-
-Jekyll has great resources to get you started writing blog posts. Check out [this Jekyll Docs page](https://jekyllrb.com/docs/posts/) first. When you've written a post or two, copy the following into a new file in your project directory called `blog.html`, and you'll see a link to your blog from the homepage:
-
-```
----
-layout: blog
-title: My Blog
----
+1. 스크립트 실행
+```bash
+$ if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then mkdir -p ~/Library/KeyBindings && echo '{"₩" = ("insertText:", "\`");}' > ~/Library/KeyBindings/DefaultkeyBinding.dict; fi
 ```
 
--- and that's it!
+2. 어플리케이션 재 실행 (재부팅)
 
-# Add a page
+# Statement
 
-To add a page, just make a new .html or .md file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
+# 제목 
+## 분류
+#### 중분류
 
+내용내용내용
+
+#### Syntax
+```java
+  public void main (String[] args) {
+
+  }
 ```
----
-title: My New Page
-layout: page
----
+#### Parameter
+* args
+  * 매개변수
+
+#### Example #1 : Java
+```java
+  public void main (String[] args) {
+
+  }
+```
+#### Example #2 : JS - ES5
+```javascript
+  function foo() {
+
+  }
+```
+#### Example #2 : JS - ES6
+```javascript
+  var foo = () => {
+
+  };
 ```
 
-You can also set these page variables in the frontmatter, if you want:
-- `subtitle`
-- `order` (orders links in the nav menu, e.g. `1`)
-- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
-- `hide` (optional; if `true`, a link won't appear in the nav menu. All this does is remove the nav link; your page will still be served to anyone who has the URL.)
+## callouts
 
-**This same set of frontmatter variables (including `title`) can also be set in `index.md` and `blog.html`.** You may want to give them titles, or hide the homepage link with `hide: true` if the homepage is the only page.
+> #### Info::Info
+> description
 
-For advanced SEO, this theme also lets you add `permalink` (see [Jekyll Docs](https://jekyllrb.com/docs/permalinks/#where-to-configure-permalinks)), `robots` (string, e.g. "noindex, nofollow"), and `canonical` (boolean; true is default) to any page or post.
+##  
 
-# Contributing
+> #### Note::Note
 
-Please feel free to submit issues and feature requests!
+##  
 
-# Credits
+> #### Tag::Tag
 
-Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me, and of course many thanks to HTML5 UP.
+##  
 
-Original README from HTML5 UP:
+> #### Comment::Comment
 
+##  
+
+> #### Hint::Hint
+
+##  
+
+> #### Success::Success
+
+##  
+
+> #### Warning::Warning
+
+##  
+
+> #### Caution::Caution
+
+##  
+
+> #### Danger::Danger
+
+##  
+
+> #### Quote::Quote
+
+## mermaid
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
 ```
-Prologue by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-
-This is Prologue, a simple, single page responsive site template. It features a
-clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
-
-Demo content images* are courtesy of the ridiculously talented Felicia Simion. Check out
-more of her amazing work over at deviantART:
-
-http://ineedchemicalx.deviantart.com/
-
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
-
-Demo banner images* courtesy of Unsplash, a radtastic collection of CC0 (public domain)
-images you can use for pretty much whatever.
-
-(* = Not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
-
-Credits:
-
-	Demo Images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		Respond.js (j.mp/respondjs)
-		jquery.scrolly (@ajlkn)
-		jquery.scrollzer (@ajlkn)
-		Skel (skel.io)
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
 ```
+
+```mermaid
+  gantt
+    dateFormat  YYYY-MM-DD
+    title Adding GANTT diagram functionality to mermaid
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2               :         des4, after des3, 5d
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d
+```
+
+```mermaid
+  sequenceDiagram
+    Alice ->> Bob: Hello Bob, how are you?
+    Bob-->>John: How about you John?
+    Bob--x Alice: I am good thanks!
+    Bob-x John: I am good thanks!
+    Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+    Bob-->Alice: Checking with John...
+    Alice->John: Yes... John, how are you?
+```
+
+```mermaid
+  graph LR
+    A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+```
+
+```mermaid
+  graph TB
+    sq[Square shape] --> ci((Circle shape))
+
+    subgraph A subgraph
+        od>Odd shape]-- Two line<br/>edge comment --> ro
+        di{Diamond with <br/> line break} -.-> ro(Rounded<br>square<br>shape)
+        di==>ro2(Rounded square shape)
+    end
+
+    %% Notice that no text in shape are added here instead that is appended further down
+    e --> od3>Really long text with linebreak<br>in an Odd shape]
+
+    %% Comments after double percent signs
+    e((Inner / circle<br>and some odd <br>special characters)) --> f(,.?!+-*ز)
+
+    cyr[Cyrillic]-->cyr2((Circle shape Начало));
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     class sq,e green
+     class di orange
+```
+
+```mermaid
+  sequenceDiagram
+    loop Daily query
+        Alice->>Bob: Hello Bob, how are you?
+        alt is sick
+            Bob->>Alice: Not so good :(
+        else is well
+            Bob->>Alice: Feeling fresh like a daisy
+        end
+
+        opt Extra response
+            Bob->>Alice: Thanks for asking
+        end
+    end
+```
+
+```mermaid
+  sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts<br/>prevail...
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+```
+
+> **Reference Url**
+> https://mermaidjs.github.io/

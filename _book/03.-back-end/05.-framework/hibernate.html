@@ -1,0 +1,1111 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hibernate · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Boss 에서 개발한 ORM (Object Relational Mapping) 프레임워크 이다.">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-callouts/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../06.-devops/" />
+    
+    
+    <link rel="prev" href="spring/gradle.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Sudal's Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../01.-general/">
+            
+                <a href="../../01.-general/">
+            
+                    
+                    01. General
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../01.-general/ide.html">
+            
+                <a href="../../01.-general/ide.html">
+            
+                    
+                    IDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../01.-general/algorithm/">
+            
+                <a href="../../01.-general/algorithm/">
+            
+                    
+                    Algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../01.-general/algorithm/sort.html">
+            
+                <a href="../../01.-general/algorithm/sort.html">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../02.-front-end/">
+            
+                <a href="../../02.-front-end/">
+            
+                    
+                    02. Front End
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../02.-front-end/01.-html/">
+            
+                <a href="../../02.-front-end/01.-html/">
+            
+                    
+                    01. HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../02.-front-end/01.-html/performance.html">
+            
+                <a href="../../02.-front-end/01.-html/performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../02.-front-end/02.-css.html">
+            
+                <a href="../../02.-front-end/02.-css.html">
+            
+                    
+                    02. CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../02.-front-end/03.-javascript/">
+            
+                <a href="../../02.-front-end/03.-javascript/">
+            
+                    
+                    03. Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../02.-front-end/03.-javascript/01.-general/">
+            
+                <a href="../../02.-front-end/03.-javascript/01.-general/">
+            
+                    
+                    01. General
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../../02.-front-end/03.-javascript/01.-general/design-pattern.html">
+            
+                <a href="../../02.-front-end/03.-javascript/01.-general/design-pattern.html">
+            
+                    
+                    Design Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2" data-path="../../02.-front-end/03.-javascript/01.-general/web-api/">
+            
+                <a href="../../02.-front-end/03.-javascript/01.-general/web-api/">
+            
+                    
+                    Web API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.2.1" data-path="../../02.-front-end/03.-javascript/01.-general/web-api/web-api.html">
+            
+                <a href="../../02.-front-end/03.-javascript/01.-general/web-api/web-api.html">
+            
+                    
+                    Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2.2" data-path="../../02.-front-end/03.-javascript/01.-general/web-api/dom.html">
+            
+                <a href="../../02.-front-end/03.-javascript/01.-general/web-api/dom.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../02.-front-end/03.-javascript/02.-references/">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/">
+            
+                    
+                    02. References
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="../../02.-front-end/03.-javascript/02.-references/built-in-object/">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/built-in-object/">
+            
+                    
+                    Built-in Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1.1" data-path="../../02.-front-end/03.-javascript/02.-references/built-in-object/array.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/built-in-object/array.html">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.1.2" data-path="../../02.-front-end/03.-javascript/02.-references/built-in-object/object.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/built-in-object/object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.1.3" data-path="../../02.-front-end/03.-javascript/02.-references/built-in-object/function.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/built-in-object/function.html">
+            
+                    
+                    Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.2" data-path="../../02.-front-end/03.-javascript/02.-references/operator-and-expression.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/operator-and-expression.html">
+            
+                    
+                    Operator & Expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.3" data-path="../../02.-front-end/03.-javascript/02.-references/global-object.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/global-object.html">
+            
+                    
+                    Global Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.4" data-path="../../02.-front-end/03.-javascript/02.-references/ecma6/">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/ecma6/">
+            
+                    
+                    ECMA 6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.4.1" data-path="../../02.-front-end/03.-javascript/02.-references/ecma6/symbol.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/ecma6/symbol.html">
+            
+                    
+                    Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.4.2" data-path="../../02.-front-end/03.-javascript/02.-references/ecma6/iterator.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/ecma6/iterator.html">
+            
+                    
+                    Iterator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.4.3" data-path="../../02.-front-end/03.-javascript/02.-references/ecma6/generator.html">
+            
+                <a href="../../02.-front-end/03.-javascript/02.-references/ecma6/generator.html">
+            
+                    
+                    Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../../02.-front-end/03.-javascript/03.-performance.html">
+            
+                <a href="../../02.-front-end/03.-javascript/03.-performance.html">
+            
+                    
+                    03. Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../02.-front-end/04.-framework/">
+            
+                <a href="../../02.-front-end/04.-framework/">
+            
+                    
+                    04. Framework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../02.-front-end/04.-framework/node-js/">
+            
+                <a href="../../02.-front-end/04.-framework/node-js/">
+            
+                    
+                    Node JS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="../../02.-front-end/04.-framework/node-js/http-transection.html">
+            
+                <a href="../../02.-front-end/04.-framework/node-js/http-transection.html">
+            
+                    
+                    HTTP Transection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.2" data-path="../../02.-front-end/04.-framework/node-js/express.html">
+            
+                <a href="../../02.-front-end/04.-framework/node-js/express.html">
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../02.-front-end/04.-framework/angular-js.html">
+            
+                <a href="../../02.-front-end/04.-framework/angular-js.html">
+            
+                    
+                    Angular JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../02.-front-end/04.-framework/react/">
+            
+                <a href="../../02.-front-end/04.-framework/react/">
+            
+                    
+                    React JS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.3.1" data-path="../../02.-front-end/04.-framework/react/redux.html">
+            
+                <a href="../../02.-front-end/04.-framework/react/redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    03. Back End
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../01.-java.html">
+            
+                <a href="../01.-java.html">
+            
+                    
+                    01. Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../02.-server/">
+            
+                <a href="../02.-server/">
+            
+                    
+                    02. Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../02.-server/linux.html">
+            
+                <a href="../02.-server/linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../02.-server/nginx/">
+            
+                <a href="../02.-server/nginx/">
+            
+                    
+                    NGINX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1" data-path="../02.-server/nginx/cli.html">
+            
+                <a href="../02.-server/nginx/cli.html">
+            
+                    
+                    CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../03.-network/">
+            
+                <a href="../03.-network/">
+            
+                    
+                    03. Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../03.-network/http/">
+            
+                <a href="../03.-network/http/">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1.1" data-path="../03.-network/http/http2.0.html">
+            
+                <a href="../03.-network/http/http2.0.html">
+            
+                    
+                    HTTP 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../04.-rdbms/">
+            
+                <a href="../04.-rdbms/">
+            
+                    
+                    04. Database
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../04.-rdbms/01.redis.html">
+            
+                <a href="../04.-rdbms/01.redis.html">
+            
+                    
+                    01.Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    05. Framework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="spring/">
+            
+                <a href="spring/">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1.1" data-path="spring/gradle.html">
+            
+                <a href="spring/gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5.2" data-path="hibernate.html">
+            
+                <a href="hibernate.html">
+            
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../06.-devops/">
+            
+                <a href="../06.-devops/">
+            
+                    
+                    06. DevOps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="../06.-devops/docker/">
+            
+                <a href="../06.-devops/docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1.1" data-path="../06.-devops/docker/cli.html">
+            
+                <a href="../06.-devops/docker/cli.html">
+            
+                    
+                    CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="../06.-devops/kubernetes.html">
+            
+                <a href="../06.-devops/kubernetes.html">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.3" data-path="../06.-devops/git.html">
+            
+                <a href="../06.-devops/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../04.-big-data.html">
+            
+                <a href="../04.-big-data.html">
+            
+                    
+                    07. Big Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Hibernate</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hibernate">Hibernate</h1>
+<h2 id="orm-object-relational-mapping">ORM (Object Relational Mapping)</h2>
+<p>RDBMS &#xD14C;&#xC774;&#xBE14;&#xC744; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC801;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xAE30;&#xC220;&#xC774;&#xB2E4;.<br>RDBMS &#xB294; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC801; &#xC811;&#xADFC;&#xC774; &#xC27D;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; ORM &#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xAC1D;&#xCCB4;&#xC640; RDBMS &#xC0AC;&#xC774;&#xB97C; &#xAC1D;&#xCCB4; &#xC9C0;&#xD5A5;&#xC801;&#xC73C;&#xB85C; &#xB2E4;&#xB8E8;&#xAE30; &#xC704;&#xD55C; &#xAE30;&#xC220;&#xC774;&#xB2E4;.</p>
+<h2 id="jpa-java-persistence-api">JPA (Java Persistence API)</h2>
+<p>ORM &#xC758; &#xD45C;&#xC900; &#xAE30;&#xC220;&#xB85C; <code>Hibernate</code>, <code>OpenJPA</code>, <code>EclipseLink</code>, <code>TopLink</code> <code>Essentials</code>  &#xACFC; &#xAC19;&#xC740; &#xAD6C;&#xD604;&#xCCB4;&#xAC00; &#xC788;&#xACE0;, &#xC774;&#xB4E4;&#xC758; &#xB300;&#xD55C; <em><strong>&#xD45C;&#xC900; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;</strong></em> &#xC774;&#xB2E4;.</p>
+<ul>
+<li>&#xC7A5;&#xC810;<ul>
+<li><em><strong>&#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC801;&#xC73C;&#xB85C; &#xAC1C;&#xBC1C; &#xBC0F; &#xB370;&#xC774;&#xD130;&#xB97C; &#xAD00;&#xB9AC;</strong></em> &#xD560; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xBE44;&#xC9C0;&#xB2C8;&#xC2A4; &#xB85C;&#xC9C1;&#xC5D0; &#xC9D1;&#xC911;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>&#xD14C;&#xC774;&#xBE14;&#xC758; &#xC0DD;&#xC131;, &#xBCC0;&#xACBD;, &#xAD00;&#xB9AC;&#xAC00; &#xC27D;&#xB2E4;.</li>
+<li>&#xBE60;&#xB978; &#xAC1C;&#xBC1C;&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;.</li>
+<li>DB &#xC5D0; &#xC758;&#xC874;&#xC801;&#xC774;&#xC9C0; &#xC54A;&#xB2E4;. <ul>
+<li>MySQL, Oracle, Sysbase, Derby, PostgreSQL &#xB4F1;&#xB4F1;&#xC758; &#xB370;&#xC774;&#xD130; &#xBCA0;&#xC774;&#xC2A4; &#xC9C0;&#xC6D0; </li>
+<li>POJO &#xAE30;&#xBC18;&#xC758; &#xBAA8;&#xB378;&#xC758; &#xC9C0;&#xC6D0; </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#xB2E8;&#xC810;<ul>
+<li>&#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC744; &#xC774;&#xD574;&#xD558;&#xACE0; &#xAC1C;&#xBC1C; &#xD574;&#xC57C; &#xD558;&#xB294; &#xB9CC;&#xD07C; &#xB7EC;&#xB2DD;&#xCEE4;&#xBE0C;&#xAC00; &#xB192;&#xB2E4;.</li>
+<li>&#xC131;&#xB2A5;&#xC0C1;&#xC758; &#xBB38;&#xC81C;&#xAC00; &#xC788;&#xC744;&#xC218; &#xC788;&#xB2E4;.</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spring/gradle.html" class="navigation navigation-prev " aria-label="Previous page: Gradle">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../06.-devops/" class="navigation navigation-next " aria-label="Next page: 06. DevOps">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"Boss 에서 개발한 ORM (Object Relational Mapping) 프레임워크 이다.","title":"Hibernate","level":"1.4.5.2","depth":3,"next":{"title":"06. DevOps","level":"1.4.6","depth":2,"path":"03.-back-end/06.-devops/README.md","ref":"03.-back-end/06.-devops/README.md","articles":[{"title":"Docker","level":"1.4.6.1","depth":3,"path":"03.-back-end/06.-devops/docker/README.md","ref":"03.-back-end/06.-devops/docker/README.md","articles":[{"title":"CLI","level":"1.4.6.1.1","depth":4,"path":"03.-back-end/06.-devops/docker/cli.md","ref":"03.-back-end/06.-devops/docker/cli.md","articles":[]}]},{"title":"Kubernetes","level":"1.4.6.2","depth":3,"path":"03.-back-end/06.-devops/kubernetes.md","ref":"03.-back-end/06.-devops/kubernetes.md","articles":[]},{"title":"Git","level":"1.4.6.3","depth":3,"path":"03.-back-end/06.-devops/git.md","ref":"03.-back-end/06.-devops/git.md","articles":[]}]},"previous":{"title":"Gradle","level":"1.4.5.1.1","depth":4,"path":"03.-back-end/05.-framework/spring/gradle.md","ref":"03.-back-end/05.-framework/spring/gradle.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["callouts","mermaid-gb3","-lunr","-search","search-plus","expandable-chapters"],"pluginsConfig":{"callouts":{"star":{"alert":"warning","picto":"fa-star"}},"mermaid-gb3":{},"search-plus":{},"expandable-chapters":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03.-back-end/05.-framework/hibernate.md","mtime":"2018-10-04T00:52:53.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-12T07:26:40.010Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
