@@ -115,7 +115,7 @@
 						.css('transition', 'none');
 
 
-				location.href = '/books/';
+				location.href = '/Gitbook/';
 	});
 
 })(jQuery);
