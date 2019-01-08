@@ -1,7 +1,0 @@
-{
-  "plugins" : [ 
-      "mermaid-gb3", 
-      "expandable-chapters-small",
-      "search-plus"
-    ]
-}
