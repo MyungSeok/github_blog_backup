@@ -1,0 +1,2226 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HTTP 2.0 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../04.-rdbms/" />
+    
+    
+    <link rel="prev" href="servlet.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Sudal's Note
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../introduce.html">
+            
+                <a href="../../../introduce.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../manual.html">
+            
+                <a href="../../../manual.html">
+            
+                    
+                    Manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../template.html">
+            
+                <a href="../../../template.html">
+            
+                    
+                    Template
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../01.-general/">
+            
+                <a href="../../../01.-general/">
+            
+                    
+                    01. General
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../01.-general/architecture/">
+            
+                <a href="../../../01.-general/architecture/">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../01.-general/architecture/msa.html">
+            
+                <a href="../../../01.-general/architecture/msa.html">
+            
+                    
+                    MSA
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../01.-general/data-structure/">
+            
+                <a href="../../../01.-general/data-structure/">
+            
+                    
+                    Data Structure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../01.-general/data-structure/data-type.html">
+            
+                <a href="../../../01.-general/data-structure/data-type.html">
+            
+                    
+                    Data Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../01.-general/data-structure/stack.html">
+            
+                <a href="../../../01.-general/data-structure/stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../01.-general/data-structure/queue/">
+            
+                <a href="../../../01.-general/data-structure/queue/">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../../../01.-general/data-structure/queue/deque.html">
+            
+                <a href="../../../01.-general/data-structure/queue/deque.html">
+            
+                    
+                    DEQUE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../../../01.-general/data-structure/queue/priority-queue.html">
+            
+                <a href="../../../01.-general/data-structure/queue/priority-queue.html">
+            
+                    
+                    Priority Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../01.-general/algorithm/">
+            
+                <a href="../../../01.-general/algorithm/">
+            
+                    
+                    Algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../01.-general/algorithm/sort/">
+            
+                <a href="../../../01.-general/algorithm/sort/">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../../../01.-general/algorithm/sort/quick.html">
+            
+                <a href="../../../01.-general/algorithm/sort/quick.html">
+            
+                    
+                    Quick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../../../01.-general/algorithm/sort/merge.html">
+            
+                <a href="../../../01.-general/algorithm/sort/merge.html">
+            
+                    
+                    Merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3" data-path="../../../01.-general/algorithm/sort/insertion.html">
+            
+                <a href="../../../01.-general/algorithm/sort/insertion.html">
+            
+                    
+                    Insertion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.4" data-path="../../../01.-general/algorithm/sort/selection.html">
+            
+                <a href="../../../01.-general/algorithm/sort/selection.html">
+            
+                    
+                    Selection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.5" data-path="../../../01.-general/algorithm/sort/bubble.html">
+            
+                <a href="../../../01.-general/algorithm/sort/bubble.html">
+            
+                    
+                    Bubble
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../01.-general/ide.html">
+            
+                <a href="../../../01.-general/ide.html">
+            
+                    
+                    IDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../02.-front-end/">
+            
+                <a href="../../../02.-front-end/">
+            
+                    
+                    02. Front End
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../02.-front-end/01.-html/">
+            
+                <a href="../../../02.-front-end/01.-html/">
+            
+                    
+                    01. HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../../02.-front-end/01.-html/canvas.html">
+            
+                <a href="../../../02.-front-end/01.-html/canvas.html">
+            
+                    
+                    Canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../../02.-front-end/01.-html/performance.html">
+            
+                <a href="../../../02.-front-end/01.-html/performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../02.-front-end/02.-css.html">
+            
+                <a href="../../../02.-front-end/02.-css.html">
+            
+                    
+                    02. CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../02.-front-end/03.-javascript/">
+            
+                <a href="../../../02.-front-end/03.-javascript/">
+            
+                    
+                    03. Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../../02.-front-end/03.-javascript/01.-general/">
+            
+                <a href="../../../02.-front-end/03.-javascript/01.-general/">
+            
+                    
+                    01. General
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../../../02.-front-end/03.-javascript/01.-general/design-pattern.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/01.-general/design-pattern.html">
+            
+                    
+                    Design Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2" data-path="../../../02.-front-end/03.-javascript/01.-general/web-api/">
+            
+                <a href="../../../02.-front-end/03.-javascript/01.-general/web-api/">
+            
+                    
+                    Web API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.2.1" data-path="../../../02.-front-end/03.-javascript/01.-general/web-api/window.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/01.-general/web-api/window.html">
+            
+                    
+                    Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2.2" data-path="../../../02.-front-end/03.-javascript/01.-general/web-api/dom.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/01.-general/web-api/dom.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2.3" data-path="../../../02.-front-end/03.-javascript/01.-general/web-api/element.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/01.-general/web-api/element.html">
+            
+                    
+                    Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../../02.-front-end/03.-javascript/02.-references/">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/">
+            
+                    
+                    02. References
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="../../../02.-front-end/03.-javascript/02.-references/built-in-object/">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/built-in-object/">
+            
+                    
+                    Built-in Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1.1" data-path="../../../02.-front-end/03.-javascript/02.-references/built-in-object/array.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/built-in-object/array.html">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.1.2" data-path="../../../02.-front-end/03.-javascript/02.-references/built-in-object/object.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/built-in-object/object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.1.3" data-path="../../../02.-front-end/03.-javascript/02.-references/built-in-object/function.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/built-in-object/function.html">
+            
+                    
+                    Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.1.4" data-path="../../../02.-front-end/03.-javascript/02.-references/built-in-object/promise.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/built-in-object/promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.2" data-path="../../../02.-front-end/03.-javascript/02.-references/operator-and-expression.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/operator-and-expression.html">
+            
+                    
+                    Operator & Expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.3" data-path="../../../02.-front-end/03.-javascript/02.-references/global-object.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/global-object.html">
+            
+                    
+                    Global Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.4" data-path="../../../02.-front-end/03.-javascript/02.-references/ecma6/">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/ecma6/">
+            
+                    
+                    ECMA 6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.4.1" data-path="../../../02.-front-end/03.-javascript/02.-references/ecma6/symbol.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/ecma6/symbol.html">
+            
+                    
+                    Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.4.2" data-path="../../../02.-front-end/03.-javascript/02.-references/ecma6/iterator.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/ecma6/iterator.html">
+            
+                    
+                    Iterator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.4.3" data-path="../../../02.-front-end/03.-javascript/02.-references/ecma6/generator.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/02.-references/ecma6/generator.html">
+            
+                    
+                    Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../../../02.-front-end/03.-javascript/03.-performance/">
+            
+                <a href="../../../02.-front-end/03.-javascript/03.-performance/">
+            
+                    
+                    03. Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.3.1" data-path="../../../02.-front-end/03.-javascript/03.-performance/memory_leak.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/03.-performance/memory_leak.html">
+            
+                    
+                    Memory Leak
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3.2" data-path="../../../02.-front-end/03.-javascript/03.-performance/netfunnel.html">
+            
+                <a href="../../../02.-front-end/03.-javascript/03.-performance/netfunnel.html">
+            
+                    
+                    NetFunnel
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../../02.-front-end/04.-framework/">
+            
+                <a href="../../../02.-front-end/04.-framework/">
+            
+                    
+                    04. Framework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../../02.-front-end/04.-framework/node-js/">
+            
+                <a href="../../../02.-front-end/04.-framework/node-js/">
+            
+                    
+                    Node JS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="../../../02.-front-end/04.-framework/node-js/http-transection.html">
+            
+                <a href="../../../02.-front-end/04.-framework/node-js/http-transection.html">
+            
+                    
+                    HTTP Transection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.2" data-path="../../../02.-front-end/04.-framework/node-js/express.html">
+            
+                <a href="../../../02.-front-end/04.-framework/node-js/express.html">
+            
+                    
+                    Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../../02.-front-end/04.-framework/angular-js.html">
+            
+                <a href="../../../02.-front-end/04.-framework/angular-js.html">
+            
+                    
+                    Angular JS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../../02.-front-end/04.-framework/react/">
+            
+                <a href="../../../02.-front-end/04.-framework/react/">
+            
+                    
+                    React JS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.3.1" data-path="../../../02.-front-end/04.-framework/react/lifecycle.html">
+            
+                <a href="../../../02.-front-end/04.-framework/react/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.2" data-path="../../../02.-front-end/04.-framework/react/redux.html">
+            
+                <a href="../../../02.-front-end/04.-framework/react/redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../../02.-front-end/04.-framework/vue/">
+            
+                <a href="../../../02.-front-end/04.-framework/vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.4.1" data-path="../../../02.-front-end/04.-framework/vue/lifecycle.html">
+            
+                <a href="../../../02.-front-end/04.-framework/vue/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    03. Back End
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../01.-java/">
+            
+                <a href="../../01.-java/">
+            
+                    
+                    01. Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../01.-java/01.-general/">
+            
+                <a href="../../01.-java/01.-general/">
+            
+                    
+                    01. General
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1.1" data-path="../../01.-java/01.-general/oop.html">
+            
+                <a href="../../01.-java/01.-general/oop.html">
+            
+                    
+                    객체 지향 프로그래밍 (OOP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.2" data-path="../../01.-java/01.-general/design_pattern/">
+            
+                <a href="../../01.-java/01.-general/design_pattern/">
+            
+                    
+                    디자인 패턴 (Design Pattern)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1.2.1" data-path="../../01.-java/01.-general/design_pattern/strategy.html">
+            
+                <a href="../../01.-java/01.-general/design_pattern/strategy.html">
+            
+                    
+                    전략 패턴 (Strategy Pattern)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.2.2" data-path="../../01.-java/01.-general/design_pattern/factory_method.html">
+            
+                <a href="../../01.-java/01.-general/design_pattern/factory_method.html">
+            
+                    
+                    팩토리 메소드 패턴 (Factory Method)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.2.3" data-path="../../01.-java/01.-general/design_pattern/template_method.html">
+            
+                <a href="../../01.-java/01.-general/design_pattern/template_method.html">
+            
+                    
+                    템플릿 메소드 패턴 (Template Method)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.3" data-path="../../01.-java/01.-general/solid/">
+            
+                <a href="../../01.-java/01.-general/solid/">
+            
+                    
+                    SOLID
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1.3.1" data-path="../../01.-java/01.-general/solid/srp.html">
+            
+                <a href="../../01.-java/01.-general/solid/srp.html">
+            
+                    
+                    단일 책임의 원칙 (SRP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.3.2" data-path="../../01.-java/01.-general/solid/ocp.html">
+            
+                <a href="../../01.-java/01.-general/solid/ocp.html">
+            
+                    
+                    개방 폐쇄의 원칙 (OCP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.3.3" data-path="../../01.-java/01.-general/solid/lsp.html">
+            
+                <a href="../../01.-java/01.-general/solid/lsp.html">
+            
+                    
+                    리스코프 치환의 원칙 (LSP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.3.4" data-path="../../01.-java/01.-general/solid/isp.html">
+            
+                <a href="../../01.-java/01.-general/solid/isp.html">
+            
+                    
+                    인터페이스 분리의 원칙 (ISP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.3.5" data-path="../../01.-java/01.-general/solid/dip.html">
+            
+                <a href="../../01.-java/01.-general/solid/dip.html">
+            
+                    
+                    의존 역전의 원칙 (DIP)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.4" data-path="../../01.-java/01.-general/jpa.html">
+            
+                <a href="../../01.-java/01.-general/jpa.html">
+            
+                    
+                    JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.1.5" data-path="../../01.-java/01.-general/ejb.html">
+            
+                <a href="../../01.-java/01.-general/ejb.html">
+            
+                    
+                    EJB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../01.-java/02.-references/">
+            
+                <a href="../../01.-java/02.-references/">
+            
+                    
+                    02. Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.2.1" data-path="../../01.-java/02.-references/collection/">
+            
+                <a href="../../01.-java/02.-references/collection/">
+            
+                    
+                    Collection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.2.1.1" data-path="../../01.-java/02.-references/collection/list.html">
+            
+                <a href="../../01.-java/02.-references/collection/list.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.1.2" data-path="../../01.-java/02.-references/collection/set.html">
+            
+                <a href="../../01.-java/02.-references/collection/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.2" data-path="../../01.-java/02.-references/map.html">
+            
+                <a href="../../01.-java/02.-references/map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.3" data-path="../../01.-java/02.-references/exception.html">
+            
+                <a href="../../01.-java/02.-references/exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.4" data-path="../../01.-java/02.-references/thread/">
+            
+                <a href="../../01.-java/02.-references/thread/">
+            
+                    
+                    Thread
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.2.4.1" data-path="../../01.-java/02.-references/thread/synchronized.html">
+            
+                <a href="../../01.-java/02.-references/thread/synchronized.html">
+            
+                    
+                    Synchronized
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.4.2" data-path="../../01.-java/02.-references/thread/multi_thread.html">
+            
+                <a href="../../01.-java/02.-references/thread/multi_thread.html">
+            
+                    
+                    Multi Thread
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.5" data-path="../../01.-java/02.-references/generic.html">
+            
+                <a href="../../01.-java/02.-references/generic.html">
+            
+                    
+                    Generic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.6" data-path="../../01.-java/02.-references/jvm.html">
+            
+                <a href="../../01.-java/02.-references/jvm.html">
+            
+                    
+                    JVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2.7" data-path="../../01.-java/02.-references/functional/">
+            
+                <a href="../../01.-java/02.-references/functional/">
+            
+                    
+                    함수형 프로그래밍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../01.-java/03.-performance/">
+            
+                <a href="../../01.-java/03.-performance/">
+            
+                    
+                    03. Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../02.-server/">
+            
+                <a href="../../02.-server/">
+            
+                    
+                    02. Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../02.-server/linux/">
+            
+                <a href="../../02.-server/linux/">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1.1" data-path="../../02.-server/linux/shell_script.html">
+            
+                <a href="../../02.-server/linux/shell_script.html">
+            
+                    
+                    Shell Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../02.-server/nginx/">
+            
+                <a href="../../02.-server/nginx/">
+            
+                    
+                    NGINX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1" data-path="../../02.-server/nginx/cli/">
+            
+                <a href="../../02.-server/nginx/cli/">
+            
+                    
+                    CLI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1.1" data-path="../../02.-server/nginx/cli/installation.html">
+            
+                <a href="../../02.-server/nginx/cli/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    03. Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1.1" data-path="servlet.html">
+            
+                <a href="servlet.html">
+            
+                    
+                    Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.1.2" data-path="http2.0.html">
+            
+                <a href="http2.0.html">
+            
+                    
+                    HTTP 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../04.-rdbms/">
+            
+                <a href="../../04.-rdbms/">
+            
+                    
+                    04. Database
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../../04.-rdbms/01.redis.html">
+            
+                <a href="../../04.-rdbms/01.redis.html">
+            
+                    
+                    01.Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../05.-framework/">
+            
+                <a href="../../05.-framework/">
+            
+                    
+                    05. Framework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../05.-framework/spring/">
+            
+                <a href="../../05.-framework/spring/">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1.1" data-path="../../05.-framework/spring/fundamental/">
+            
+                <a href="../../05.-framework/spring/fundamental/">
+            
+                    
+                    Fundamental
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1.1.1" data-path="../../05.-framework/spring/fundamental/aop.html">
+            
+                <a href="../../05.-framework/spring/fundamental/aop.html">
+            
+                    
+                    AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.1.2" data-path="../../05.-framework/spring/fundamental/ioc.html">
+            
+                <a href="../../05.-framework/spring/fundamental/ioc.html">
+            
+                    
+                    IoC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.1.3" data-path="../../05.-framework/spring/fundamental/bean.html">
+            
+                <a href="../../05.-framework/spring/fundamental/bean.html">
+            
+                    
+                    Bean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.1.4" data-path="../../05.-framework/spring/fundamental/dispatcherServlet.html">
+            
+                <a href="../../05.-framework/spring/fundamental/dispatcherServlet.html">
+            
+                    
+                    Dispatcher Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.1.5" data-path="../../05.-framework/spring/fundamental/gradle.html">
+            
+                <a href="../../05.-framework/spring/fundamental/gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.2" data-path="../../05.-framework/spring/boot/">
+            
+                <a href="../../05.-framework/spring/boot/">
+            
+                    
+                    Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1.2.1" data-path="../../05.-framework/spring/boot/thymeleaf.html">
+            
+                <a href="../../05.-framework/spring/boot/thymeleaf.html">
+            
+                    
+                    Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.3" data-path="../../05.-framework/spring/batch/">
+            
+                <a href="../../05.-framework/spring/batch/">
+            
+                    
+                    Batch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1.3.1" data-path="../../05.-framework/spring/batch/rabbitmq.html">
+            
+                <a href="../../05.-framework/spring/batch/rabbitmq.html">
+            
+                    
+                    Rabbit MQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.4" data-path="../../05.-framework/spring/security.html">
+            
+                <a href="../../05.-framework/spring/security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../../05.-framework/hibernate.html">
+            
+                <a href="../../05.-framework/hibernate.html">
+            
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../06.-devops/">
+            
+                <a href="../../06.-devops/">
+            
+                    
+                    06. DevOps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="../../06.-devops/docker/">
+            
+                <a href="../../06.-devops/docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1.1" data-path="../../06.-devops/docker/cli.html">
+            
+                <a href="../../06.-devops/docker/cli.html">
+            
+                    
+                    CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="../../06.-devops/kubernetes.html">
+            
+                <a href="../../06.-devops/kubernetes.html">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.3" data-path="../../06.-devops/git.html">
+            
+                <a href="../../06.-devops/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../04.-big-data.html">
+            
+                <a href="../../04.-big-data.html">
+            
+                    
+                    07. Big Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >HTTP 2.0</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="http-20">HTTP 2.0</h1>
+<h2 id="http1-&#xC758;-&#xC694;&#xCCAD;-&#xBC29;&#xC2DD;">HTTP1 &#xC758; &#xC694;&#xCCAD; &#xBC29;&#xC2DD;</h2>
+<p>HTTP1 &#xC5D0;&#xC11C;&#xB294; &#xC55E;&#xC5D0;&#xC11C; &#xB0A0;&#xB837;&#xB358; &#xC694;&#xCCAD;&#xC758; &#xC751;&#xB2F5;&#xC744; &#xBC1B;&#xC544;&#xC57C;&#xB9CC; &#xB2E4;&#xC74C; &#xC694;&#xCCAD;&#xC774; &#xCC98;&#xB9AC;&#xB420; &#xC218; &#xC788;&#xB2E4;.</p>
+<div class="mermaid">
+  sequenceDiagram
+    Note over Client, Server : Establish Connection
+    Client -&gt;&gt; + Server : Request
+    Note right of Server: Blocked
+    Server -&gt;&gt; - Client : Response
+    Note over Client, Server : Close Connection
+    Note over Client, Server : Establish Connection
+    Client -&gt;&gt; + Server : Request
+    Note right of Server: Blocked
+    Server -&gt;&gt; - Client : Response
+    Note over Client, Server : Close Connection
+</div>
+
+<p>&#xC774;&#xB7EC;&#xD55C; &#xD604;&#xC0C1;&#xC744; &#xD574;&#xACB0; &#xD558;&#xAE30;&#xC704;&#xD574; &#xC9C0;&#xC18D; &#xCEE4;&#xB125;&#xC158; (Persistent Connection) &#xC774;&#xB77C;&#xB294; &#xAC1C;&#xB150;&#xACFC; HTTP &#xD30C;&#xC774;&#xD504; &#xB77C;&#xC774;&#xB2DD; (Pipelining) &#xC774;&#xB77C;&#xB294; &#xAC1C;&#xB150;&#xC774; &#xB4E4;&#xC5B4;&#xAC14;&#xB2E4;.<br>&#xCEE4;&#xB125;&#xC158;&#xC744; &#xC7AC;&#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xACE0;, <code>Request</code> &#xB97C; &#xBBF8;&#xB9AC; &#xC5EC;&#xB7EC;&#xAC1C; &#xC11C;&#xBC84;&#xB85C; &#xC694;&#xCCAD;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xB418;&#xC5C8;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xADFC;&#xBCF8;&#xC801;&#xC73C;&#xB85C; <code>Request</code> &#xBCF4;&#xB0B8; &#xC21C;&#xC11C;&#xB300;&#xB85C; <code>Response</code> &#xB97C; &#xBC1B;&#xC744;&#xC218; &#xC788;&#xB2E4;&#xB294; &#xC810;&#xC5D0;&#xC11C;&#xB294; &#xBB38;&#xC81C;&#xD574;&#xACB0;&#xC774; &#xC5B4;&#xB824;&#xC6CC; &#xBCF4;&#xC778;&#xB2E4;.</p>
+<h2 id="hol-head-of-line-blocking-&#xC758;-&#xBB38;&#xC81C;&#xC810;">HOL (Head-of-Line Blocking) &#xC758; &#xBB38;&#xC81C;&#xC810;</h2>
+<p>&#xB9CC;&#xC57D; &#xCC98;&#xC74C;&#xC5D0; &#xC694;&#xCCAD;&#xD55C; <code>Request</code> &#xC5D0; &#xBB38;&#xC81C;&#xAC00; &#xC788;&#xC5B4; <code>Response</code> &#xAC00; &#xB2A6;&#xC5B4;&#xC9C0;&#xBA74; 2&#xBC88;&#xC9F8;, 3&#xBC88;&#xC9F8;&#xC5D0; &#xC694;&#xCCAD;&#xD55C; <code>Request</code> &#xC758; <code>Response</code> &#xB3C4; &#xB2A6;&#xC5B4;&#xC9C0;&#xB294; &#xBB38;&#xC81C;&#xC810;&#xC774; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;.</p>
+<div class="mermaid">
+  gantt
+    title Head-Of-Line Blocking
+    dateFormat  YYYY-MM-DD
+    section HTTP
+    Request 1     : crit, 2000-01-01  , 12d
+    Request 2     : 6d
+    Request 3     : 6d
+</div>
+
+<h2 id="&#xB3C4;&#xBA54;&#xC778;-&#xC0E4;&#xB529;">&#xB3C4;&#xBA54;&#xC778; &#xC0E4;&#xB529;</h2>
+<p><em><strong>HOL</strong></em> &#xACFC; &#xAC19;&#xC740; &#xBB38;&#xC81C;&#xB4E4;&#xC744; &#xD574;&#xACB0;&#xD558;&#xAE30; &#xC704;&#xD558;&#xC5EC; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xB3C4;&#xBA54;&#xC778; &#xBCC4;&#xB85C; &#xBD84;&#xB9AC;&#xD574;&#xC11C; &#xC790;&#xC6D0;&#xC744; &#xBC1B;&#xB294; &#xBC29;&#xBC95;<br>&#xB3C4;&#xBA54;&#xC778;&#xBCC4;&#xB85C; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xBCD1;&#xB82C;&#xC801;&#xC73C;&#xB85C; &#xB3D9;&#xC2DC;&#xC5D0; &#xBC1B;&#xC744;&#xC218; &#xC788;&#xB2E4;.</p>
+<div class="mermaid">
+  gantt
+    title Domain Sharding
+    dateFormat  YYYY-MM-DD
+    section Request HTML
+    index.html     : html, 2000-01-01  , 8d
+    section A Domain
+    style_1.css     : css, after html, 6d
+    style_2.css     : after html, 6d
+    style_3.css     : after css, 6d
+    style_4.css     : after css, 6d
+    section B Domain
+    resource_1.js     : js , after html, 6d
+    resource_2.js     : after html, 6d
+    resource_3.js     : after js, 6d
+    resource_4.js     : after js, 6d
+</div>
+
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xD558;&#xB098;&#xC758; &#xB3C4;&#xBA54;&#xC778;&#xBCC4; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C; &#xBC1B;&#xC744;&#xC218; &#xC788;&#xB294; &#xCEE4;&#xB125;&#xC158;&#xC758; &#xC81C;&#xD55C; &#xC774;&#xB098; <em><strong>DNS Lookup &#xACFC;&#xC815;&#xACFC; TCP Handshake &#xACFC;&#xC815;&#xC5D0;&#xC11C; &#xC18C;&#xC694;&#xB418;&#xB294; &#xC2DC;&#xAC04;</strong></em> &#xB54C;&#xBB38;&#xC5D0; &#xC624;&#xD788;&#xB824; &#xBD80;&#xC791;&#xC6A9; &#xBC1C;&#xC0DD; &#xAC00;&#xB2A5;&#xC131;&#xC774; &#xC788;&#xB2E4;.</p>
+<blockquote>
+<p>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB2F9; &#xB3C4;&#xBA54;&#xC778;&#xBCC4; &#xB9AC;&#xC18C;&#xC2A4; &#xB2E4;&#xC6B4; &#xC81C;&#xD55C;&#xC740; &#xBCF4;&#xD1B5; <em><strong>6 ~ 8 &#xAC1C;&#xC815;&#xB3C4;</strong></em> &#xC774;&#xBA70; <code>iframe</code> &#xC740; &#xC81C;&#xC678;&#xC774;&#xB2E4;.</p>
+</blockquote>
+<h2 id="&#xADF8;-&#xC678;-&#xBC29;&#xBC95;&#xB4E4;">&#xADF8; &#xC678; &#xBC29;&#xBC95;&#xB4E4;</h2>
+<p><em><strong>HTTP 1.1</strong></em> &#xC5D0;&#xC11C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xBC29;&#xBC95;&#xC744; &#xD1B5;&#xD574;&#xC11C;&#xB3C4; &#xC131;&#xB2A5;&#xAC1C;&#xC120;&#xC744; &#xC2DC;&#xB3C4;&#xD558;&#xC600;&#xB2E4;.</p>
+<ol>
+<li>HTTP &#xC694;&#xCCAD; &#xCD5C;&#xC18C;&#xD654;<ol>
+<li>&#xD070; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xD2CD;&#xC73C;&#xB85C; &#xC694;&#xCCAD;&#xD6C4; CSS &#xB85C; &#xC798;&#xAC8C; &#xC798;&#xB77C;&#xC11C; &#xC0AC;&#xC6A9;</li>
+<li>BASE64 &#xC778;&#xCF54;&#xB529;&#xB41C; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xC694;&#xCCAD;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;</li>
+</ol>
+</li>
+<li>&#xC18C;&#xC2A4; &#xC555;&#xCD95;<ol>
+<li>HTML &#xC758; gzip &#xC555;&#xCD95; &#xC804;&#xC1A1;</li>
+<li>JS, CSS &#xC758; &#xC18C;&#xC2A4; &#xC555;&#xCD95;</li>
+</ol>
+</li>
+</ol>
+<h2 id="http-20-&#xC758;-&#xB2E4;&#xB978;&#xC810;">HTTP 2.0 &#xC758; &#xB2E4;&#xB978;&#xC810;</h2>
+<h3 id="&#xBC14;&#xC774;&#xB108;&#xB9AC;&#xB85C;-&#xC778;&#xCF54;&#xB529;&#xB41C;-&#xB370;&#xC774;&#xD130;-&#xC804;&#xC1A1;">&#xBC14;&#xC774;&#xB108;&#xB9AC;&#xB85C; &#xC778;&#xCF54;&#xB529;&#xB41C; &#xB370;&#xC774;&#xD130; &#xC804;&#xC1A1;</h3>
+<p>&#xAE30;&#xC874;&#xC758; &#xD14D;&#xC2A4;&#xD2B8; &#xAE30;&#xBC18;&#xC758; &#xB370;&#xC774;&#xD130;&#xB97C; &#xBC14;&#xC774;&#xB108;&#xB9AC; &#xD3EC;&#xB9F7;&#xC758; &#xB370;&#xC774;&#xD130;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xAC8C; &#xB418;&#xC5B4;<br>&#xD30C;&#xC2F1;&#xC774; &#xB354; &#xBE60;&#xB974;&#xACE0; &#xC624;&#xB958; &#xBC1C;&#xC0DD; &#xAC00;&#xB2A5;&#xC131;&#xC774; &#xC801;&#xC73C;&#xBA70; &#xD558;&#xB098;&#xC758; &#xD50C;&#xB808;&#xC778; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD504;&#xB808;&#xC784; &#xB2E8;&#xC704;&#xB85C; &#xB098;&#xB220;&#xC11C; &#xAD00;&#xB9AC; &#xBC0F; &#xC804;&#xC1A1;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>HTTP 2.0 &#xC740; Frame &#xACFC; Stream &#xC774;&#xB77C;&#xB294; &#xAC1C;&#xB150;&#xC774; &#xC801;&#xC6A9; &#xB418;&#xC5C8;&#xB2E4;.</p>
+<blockquote>
+<p>HTTP 1.x &#xC2DC;&#xC808;&#xC5D0;&#xB294; &#xC694;&#xCCAD; (Request) &#xACFC; &#xC751;&#xB2F5; (Response) &#xC73C;&#xB85C; &#xBA85;&#xD655;&#xD788; &#xAD6C;&#xBD84;&#xB418;&#xC5C8;&#xB2E4;.</p>
+</blockquote>
+<ul>
+<li>Frame<ul>
+<li>HTTP2 &#xD1B5;&#xC2E0;&#xC5D0;&#xC11C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC8FC;&#xACE0; &#xBC1B;&#xC744;&#xC218; &#xC788;&#xB294; &#xAC00;&#xC7A5; &#xC791;&#xC740; &#xB2E8;&#xC704;&#xC758; &#xB370;&#xC774;&#xD130;</li>
+<li>&#xD5E4;&#xB354; &#xD504;&#xB808;&#xC784;, &#xB370;&#xC774;&#xD130; &#xD504;&#xB808;&#xC784;&#xC73C;&#xB85C; &#xAD6C;&#xC131;</li>
+</ul>
+</li>
+<li>Stream<ul>
+<li><code>Server</code> &#xC640; <code>Client</code> &#xC0AC;&#xC774;&#xC758; &#xC591;&#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC8FC;&#xACE0; &#xBC1B;&#xB294; &#xD55C;&#xAC1C; &#xC774;&#xC0C1;&#xC758; <em><strong>&#xBA54;&#xC138;&#xC9C0;</strong></em> &#xB97C; &#xC758;&#xBBF8;&#xD55C;&#xB2E4;.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#xC2A4;&#xD2B8;&#xB9BC; = &#xBA54;&#xC138;&#xC9C0; + &#xBA54;&#xC138;&#xC9C0; + &#xBA54;&#xC138;&#xC9C0; + &#xBA54;&#xC138;&#xC9C0; + &#xBA54;&#xC138;&#xC9C0; + &#xBA54;&#xC138;&#xC9C0; + ...<br>&#xBA54;&#xC138;&#xC9C0; = &#xD504;&#xB808;&#xC784; + &#xD504;&#xB808;&#xC784; + &#xD504;&#xB808;&#xC784; + &#xD504;&#xB808;&#xC784; + &#xD504;&#xB808;&#xC784; + &#xD504;&#xB808;&#xC784; + ...</p>
+</blockquote>
+<h3 id="&#xC6B0;&#xC120;&#xC21C;&#xC704;-&#xC124;&#xC815;">&#xC6B0;&#xC120;&#xC21C;&#xC704; &#xC124;&#xC815;</h3>
+<p>&#xC0C1;&#xB300;&#xC801;&#xC73C;&#xB85C; &#xC911;&#xC694;&#xD55C; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xBA3C;&#xC800; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xBC1B;&#xAC8C; &#xB054; &#xC804;&#xC1A1; &#xC2A4;&#xD2B8;&#xB9BC;&#xC758; &#xC6B0;&#xC120;&#xC21C;&#xC704; &#xC124;&#xC815;&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;.</p>
+<h3 id="server-push">Server Push</h3>
+<p>&#xC694;&#xCCAD;&#xD55C; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8;&#xC5D0;&#xAC8C; &#xC11C;&#xBC84;&#xAC00; &#xC54C;&#xC544;&#xC11C; &#xD544;&#xC694;&#xD55C; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xCC3E;&#xC544;&#xC11C; &#xB0B4;&#xB824;&#xC900;&#xB2E4;.</p>
+<div class="mermaid">
+  gantt
+    title Domain Sharding
+    dateFormat  YYYY-MM-DD
+    section Request HTML
+    index.html     : html, 2000-01-01  , 8d
+    section Server Push
+    style_1.css     : after html, 6d
+    style_2.css     : after html, 6d
+    style_3.css     : after html, 6d
+    style_4.css     : after html, 6d
+    resource_1.js     : after html, 6d
+    resource_2.js     : after html, 6d
+    resource_3.js     : after html, 6d
+    resource_4.js     : after html, 6d
+</div>
+
+<p>&#xD558;&#xC9C0;&#xB9CC; <em><strong>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xAC00; &#xCE90;&#xC2F1;&#xB41C; &#xB370;&#xC774;&#xD130;</strong></em> &#xB098; <em><strong>&#xD544;&#xC694;&#xC5C6;&#xB294; &#xB9AC;&#xC18C;&#xC2A4; &#xB370;&#xC774;&#xD130;</strong></em> &#xB294; &#xC790;&#xC6D0;&#xC758; &#xB0AD;&#xBE44;&#xB97C; &#xCD08;&#xB798;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<h3 id="&#xD5E4;&#xB354;&#xC758;-&#xC555;&#xCD95;">&#xD5E4;&#xB354;&#xC758; &#xC555;&#xCD95;</h3>
+<p>HTTP2 &#xC758; Header &#xB294; <em><strong>Header Table &#xB85C; &#xAD00;&#xB9AC;</strong></em> &#xB418;&#xC5B4; <em><strong>&#xC774;&#xC804; &#xC694;&#xCCAD;&#xC5D0;&#xC11C; &#xC911;&#xBCF5;&#xC73C;&#xB85C; &#xC120;&#xC5B8;&#xB41C; &#xD5E4;&#xB354;&#xB294; &#xC778;&#xB371;&#xC2A4; &#xAC12;&#xB9CC; &#xC804;&#xC1A1;&#xD558;&#xC5EC; &#xB370;&#xC774;&#xD130;&#xB97C; &#xCD5C;&#xC18C;&#xD654;</strong></em> &#xD55C;&#xB2E4;.</p>
+<h3 id="&#xC801;&#xC6A9;-&#xBC29;&#xBC95;">&#xC801;&#xC6A9; &#xBC29;&#xBC95;</h3>
+<ol>
+<li>TSL / SSH &#xC778;&#xC99D;&#xC11C; &#xD544;&#xC694;</li>
+<li>&#xC6F9;&#xC11C;&#xBC84;&#xC758; &#xC138;&#xD305;</li>
+</ol>
+<h3 id="&#xACE0;&#xB824;&#xC0AC;&#xD56D;">&#xACE0;&#xB824;&#xC0AC;&#xD56D;</h3>
+<p>&#xC77C;&#xBD80; &#xD658;&#xACBD;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xD6A8;&#xC728;&#xC774; &#xB5A8;&#xC5B4;&#xC838; &#xC801;&#xC6A9; &#xD658;&#xACBD;&#xC5D0; &#xB530;&#xB978; &#xACE0;&#xB824;&#xAC00; &#xD544;&#xC694;&#xD558;&#xB2E4;.</p>
+<h4 id="http-20-&#xD6A8;&#xC728;&#xC774;-&#xB0AE;&#xC740;-&#xACBD;&#xC6B0;">HTTP 2.0 &#xD6A8;&#xC728;&#xC774; &#xB0AE;&#xC740; &#xACBD;&#xC6B0;</h4>
+<p>HTTP 1.1 &#xBCF4;&#xB2E4; &#xC131;&#xB2A5;&#xC801;&#xC73C;&#xB85C;&#xB294; &#xC6B0;&#xC218;&#xD558;&#xC9C0;&#xB9CC; &#xC801;&#xC6A9;&#xD558;&#xC600;&#xC744;&#xB54C;&#xC758; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC740; &#xC0C1;&#xD669;&#xC77C; &#xACBD;&#xC6B0; &#xC131;&#xB2A5;&#xC801; &#xC774;&#xC810;&#xC774; &#xCC28;&#xC774;&#xAC00; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;&#xB3C4; &#xC788;&#xB2E4;.</p>
+<ul>
+<li>HTTP &#xB9CC; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xACBD;&#xC6B0;<ul>
+<li>SSL &#xD578;&#xB4DC;&#xC170;&#xC774;&#xD06C; &#xC2DC;&#xAC04;&#xC774; &#xCD94;&#xAC00;&#xC801;&#xC73C;&#xB85C; &#xD544;&#xC694;&#xD558;&#xC5EC; &#xCD94;&#xAC00; &#xC2DC;&#xAC04; &#xC18C;&#xC694;</li>
+</ul>
+</li>
+<li>&#xB3C4;&#xBA54;&#xC778;&#xC774; &#xB9CE;&#xC740; &#xACBD;&#xC6B0;<ul>
+<li>&#xB3C4;&#xBA54;&#xC778;&#xBCC4;&#xB85C; &#xB3D9;&#xC791;&#xD558;&#xBBC0;&#xB85C; &#xB3C4;&#xBA54;&#xC778;&#xBCC4;&#xB85C; &#xCEE4;&#xB125;&#xC158;&#xC774; &#xD544;&#xC694;&#xB85C; &#xD558;&#xB2E4; &#xC774;&#xC5D0; &#xB530;&#xB978; &#xC2DC;&#xAC04;&#xC801; &#xD6A8;&#xC728;&#xC774; &#xB5A8;&#xC5B4;&#xC9C4;&#xB2E4;.</li>
+</ul>
+</li>
+<li>HTTP &#xAC00; &#xBCD1;&#xBAA9; &#xD604;&#xC0C1;&#xC774; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;</li>
+<li>RTT (Round-Trip Dealy Time : &#xBA54;&#xC138;&#xC9C0;&#xB97C; &#xC6D0;&#xACA9;&#xC5D0; &#xBCF4;&#xB0B4;&#xACE0; &#xADF8;&#xAC83;&#xC774; &#xB3CC;&#xC544;&#xC624;&#xB294; &#xC751;&#xB2F5;&#xC2DC;&#xAC04; - &#xB808;&#xC774;&#xD134;&#xC2DC;) &#xAC00; &#xC791;&#xC740; &#xACBD;&#xC6B0;<ul>
+<li>&#xB808;&#xC774;&#xD134;&#xC2DC;&#xAC00; &#xD070; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xB354; &#xD070; &#xD6A8;&#xC728;&#xC744; &#xC5BB;&#xC744;&#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; RTT &#xAC00; &#xB9E4;&#xC6B0; &#xC791;&#xC740; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xC774;&#xC810;&#xC774; &#xC5C6;&#xB2E4;.</li>
+</ul>
+</li>
+<li>&#xD398;&#xC774;&#xC9C0; &#xB0B4;&#xC758; &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xC801;&#xC740; &#xACBD;&#xC6B0;<ul>
+<li>6&#xAC1C; &#xC774;&#xD558;&#xC758; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xAC00;&#xC9C4;&#xB2E4;&#xBA74; &#xCEE4;&#xB125;&#xC158; &#xC7AC;&#xC0AC;&#xC6A9;&#xC758; &#xAC00;&#xCE58;&#xAC00; &#xB5A8;&#xC5B4;&#xC9C4;&#xB2E4;.</li>
+</ul>
+</li>
+</ul>
+<p>&#xC77C;&#xBD80; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xC758;&#xD574;&#xC11C; &#xC9C0;&#xC6D0; &#xAC00;&#xB2A5;&#xC131;&#xC774; &#xC0C1;&#xC774;&#xD558;&#xC5EC; &#xD655;&#xC778;&#xC774; &#xD544;&#xC694;&#xD558;&#xB2E4;.</p>
+<h4 id="&#xC9C0;&#xC6D0;-&#xAC00;&#xB2A5;-&#xBE0C;&#xB77C;&#xC6B0;&#xC800;">&#xC9C0;&#xC6D0; &#xAC00;&#xB2A5; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;</h4>
+<ul>
+<li>IE11 (Win10 ver)</li>
+<li>IE Edge</li>
+<li>Chrome</li>
+<li>IOS Chrome</li>
+<li>Firefox</li>
+<li>Opera</li>
+<li><a href="https://caniuse.com/#feat=http2" target="_blank">&#xAE30;&#xD0C0; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;</a></li>
+</ul>
+<blockquote>
+<h3 id="&#xCC38;&#xACE0;&#xC790;&#xB8CC;">&#xCC38;&#xACE0;&#xC790;&#xB8CC;</h3>
+<p><a href="https://d2.naver.com/helloworld/140351" target="_blank">https://d2.naver.com/helloworld/140351</a><br><a href="http://americanopeople.tistory.com/115" target="_blank">http://americanopeople.tistory.com/115</a><br><a href="https://www.popit.kr/&#xB098;&#xB9CC;-&#xBAA8;&#xB974;&#xACE0;-&#xC788;&#xB358;-http2/" target="_blank">https://www.popit.kr/&#xB098;&#xB9CC;-&#xBAA8;&#xB974;&#xACE0;-&#xC788;&#xB358;-http2/</a><br><a href="https://kinsta.com/learn/what-is-http2/" target="_blank">https://kinsta.com/learn/what-is-http2/</a></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="servlet.html" class="navigation navigation-prev " aria-label="Previous page: Servlet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../04.-rdbms/" class="navigation navigation-next " aria-label="Next page: 04. Database">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTTP 2.0","level":"1.4.3.1.2","depth":4,"next":{"title":"04. Database","level":"1.4.4","depth":2,"path":"book/03.-back-end/04.-rdbms/README.md","ref":"book/03.-back-end/04.-rdbms/README.md","articles":[{"title":"01.Redis","level":"1.4.4.1","depth":3,"path":"book/03.-back-end/04.-rdbms/01.redis.md","ref":"book/03.-back-end/04.-rdbms/01.redis.md","articles":[]}]},"previous":{"title":"Servlet","level":"1.4.3.1.1","depth":4,"path":"book/03.-back-end/03.-network/http/servlet.md","ref":"book/03.-back-end/03.-network/http/servlet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mermaid-gb3","expandable-chapters-small","search-plus"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/03.-back-end/03.-network/http/http2.0.md","mtime":"2018-12-27T03:58:18.147Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-08T01:56:37.513Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
